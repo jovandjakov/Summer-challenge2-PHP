@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+:root {
+    --primary: #37287b;
+    --secondary: #4942a2;
+    --accents: #fba60b;
+    --black: #121212;
+    --white: #fff;
+    --text: #878787;
+    --gray: #1f242a;
+    --shadow: #d8d8d8;
+    --lightGray: #e3e3ef;
+    --fontFamily: 'Open Sans', sans-serif;
+    --fontSize: 16px;
+    --transition: .4s ease;
+    --padding: 50px 0;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    color: var(--transition);
+    width: 100%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.cont {
+    padding: 0 200px;
+}
+
+/*------NAV----------------------------*/
+nav {
+    background: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 926px;
+    z-index: 10;
+}
+nav .logo {
+    padding: 10px 0;
+    color: var(--white);
+    font-weight: 800;
+}
+nav .logo a {
+    color: var(--white);
+    font-size: 2.5rem;
+    padding: 20px 0;
+}
+nav .logo a:hover {
+    color: var(--accents);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a {
+    display: block;
+    margin-top: 15px;
+    padding: 0 20px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: var(--accents);
+}
+/*------HEADER---------------------------*/
+header {
+    background-image: url(img/home-header.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    width: 100%;
+}
+header .group {
+    flex: 0 0 48%;
+    padding: 100px 0;
+}
+header .group2 {
+    flex: 0 0 48%;
+    padding: 100px 0;
+}
+header .group h1 {
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+header .group a {
+    background: var(--accents);
+    border: none;
+    border-radius: 20px;
+    color: var(--white);
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+header .group a:hover {
+    color: var(--gray);
+    justify-content: space-between;
+}
+/*------ODELJCI---------------------------*/
+.odeljci {
+    padding: 80px 200px;
+}
+.odeljci .odeljak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.odeljci .odeljak h2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+.line {
+    display: flex;
+    
+}
+.line1 {
+    width: 50px;
+    height: 4px;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    margin: 0 3px;
+}
+.line2 {
+    width: 25px;
+    height: 4px;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    margin: 0 3px;
+}
+.line3 {
+    width: 10px;
+    height: 4px;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    margin: 0 3px;
+}
+.line4 {
+    width: 100%;
+    height: 2px;
+    background-color: var(--lightGray);
+}
+.odeljci .odeljak2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+.odeljci .odeljak2 .box1 {
+    flex: 0 0 20%;
+    box-shadow: 0 5px 16px var(--text);
+    margin: 20px;
+    padding: 70px 35px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    
+}
+.odeljci .odeljak2 .box1:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+.odeljci .odeljak2 .box1 i {
+    font-size: 3rem;
+    color: var(--black);
+    padding: 10px;
+}
+.odeljci .odeljak2 .box1 i:hover {
+    background: var(--white);
+    border-radius: 100px;
+    box-shadow: 0 5px 16px var(--text);
+
+}
+.odeljci .odeljak2 .box1 h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.odeljci .btnn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 80px 0;
+    
+}
+.odeljci .btnn .radLink {
+    background: var(--accents);
+    border: none;
+    border-radius: 20px;
+    color: var(--white);
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 10px;
+}
+.odeljci .btnn .radLink:hover {
+    color: var(--gray);
+}
+.odeljci a {
+    background: var(--secondary);
+    border: none;
+    border-radius: 20px;
+    color: var(--white);
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 10px;
+}
+.odeljci a:hover {
+    color: var(--gray);
+    justify-content: space-between;
+}
+.odeljci .btn2 {
+    background: var(--accents);
+    border: none;
+    border-radius: 20px;
+    color: var(--white);
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 10px;
+}
+.odeljci .btn2:hover {
+    color: var(--gray);
+    justify-content: space-between;
+}
+/*------PRAKSA----------------------------*/
+.praksa {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+.praksa img {
+    width: 100%;
+}
+.praksa article {
+    flex: 0 0 48%;
+}
+.praksa h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/*------SADEZAJ---------------------------*/
+
+.sadrzaj {
+    background: var(--secondary);
+    color:var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    
+}
+.snimci {
+    text-align: center;
+    display: block;
+    background: var(--accents);
+    padding: 15px 0;
+    color: var(--white);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+}
+.sadrzaj .art2 {
+    flex: 0 0 47%;
+    background: var(--white);
+    color: var(--black);
+    position: relative;
+}
+.sadrzaj .art2 .btn1 {
+        background: var(--accents);
+        border: none;
+        border-radius: 20px;
+        color: var(--white);
+        padding: 10px 30px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0 0 20px 20px;
+    }
+.sadrzaj .art2 .btn1:hover {
+    color: var(--black);
+    background: var(--secondary);
+}   
+
+.sadrzaj .art3 {
+    flex: 0 0 40%;
+    padding: 50px 0;
+}
+.sadrzaj .art2 h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 20px;
+} 
+.sadrzaj .art2 p {
+    padding:0 30px 0 20px;
+}
+.sadrzaj .art2 .pridruzise {
+    padding:0 30px 0 20px;
+}
+.sadrzaj #para {
+    height: 150px;
+    margin: 30px 100px 0 0;
+}
+.sadrzaj .art3 i {
+    padding: 10px ;
+    cursor: pointer;
+    border-radius: 100px;
+    margin-left: 50px;
+}
+.sadrzaj .art3 i:hover {
+    color: var(--gray);
+    background: var(--accents);
+}
+/*------KALENDAR----------------------------*/
+.kalendar {
+    margin-top: 70px;
+    
+}
+.kal-rad {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kal-rad h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+.kalendar .slike {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.kalendar .slike img {
+    border-radius: 25px;
+    width: 100%;
+    box-shadow: 5px 5px 16px var(--text);
+    transition: transform 3s ease-in-out;
+}
+.kalendar .slike img:hover {
+    transform: scale(1.3);
+    
+}
+
+.kalendar .slike article {
+    flex: 0 0 32%;
+    overflow: hidden;
+    position: relative;
+}
+.kalendar .slike article .admin {
+    display: block;
+    background: var(--lightGray);
+    padding: 2px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: -2%;
+    left: 30%;
+}
+.kalendar .slike article h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/*------KALENDAR2----------------------------*/
+.kalendar2 .slike2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+    
+}
+
+.kalendar2 .slike2 article {
+    flex: 0 0 48%;
+    position: relative;
+    overflow: hidden;
+}
+
+.kalendar2 .slike2 article img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 16px var(--text);
+    transition: transform 3s ease-in-out;
+}
+.kalendar2 .slike2 img:hover {
+    transform: scale(1.3);
+    
+}
+.kalendar2 .slike2 article h2 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white);
+    background: #1f242abf;
+    border-radius: 25px;
+    padding: 5px;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+}
+.kalendar2 .slike2 article .admin {
+    position: absolute;
+    background: var(--lightGray);
+    border-radius: 20px;
+    padding: 3px;
+    top: -5%;
+    left: 55%;
+} 
+
+/*------O NAMA2---------------------------*/
+.o-nama2 {
+    overflow: hidden;
+}
+.o-nama2 .artOnama {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.o-nama2 .onamaDiv1 h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.o-nama2 .artOnama .onamaDiv2 {
+    flex: 0 0 48%;
+}
+.o-nama2 .artOnama .onamaDiv2 h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.o-nama2 img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 16px var(--text);
+    transition: transform 3s ease-in-out;
+}
+.o-nama2 img:hover {
+    transform: scale(1.3);
+    
+}
+
+/*------RADIONICE2---------------------------*/
+.radionice2 .slike {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.radionice2 .slike img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 16px var(--text);
+    transition: transform 3s ease-in-out;
+}
+.radionice2 .slike img:hover {
+    transform: scale(1.3);
+    
+}
+.radionice2 .slike article {
+    flex: 0 0 48%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.radionice2 .slike article h2 {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--white);
+    background: #1f242abf;
+    border-radius: 25px;
+    padding: 5px;
+    position: absolute;
+    top: 82%;
+    left: 2%;
+}
+.radionice2 .slike article .admin {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+    background:  #e3e3ef95;
+    border-radius: 25px;
+    padding: 5px;
+    position: absolute;
+    top: -5%;
+    left: 55%;
+}
+.radionice2 .slike {
+    padding: 70px 0;
+}
+/*------KODIRANJE SREDOM----------------------------*/
+.kodiranjeSredom .slike img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 16px var(--text);
+    transition: transform 3s ease-in-out;
+}
+
+.kodiranjeSredom .slike img:hover {
+    transform: scale(1.3);
+    
+}
+.kodiranjeSredom .slike {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.kodiranjeSredom .slike article {
+    overflow: hidden;
+}
+.kodiranjeSredom .slike article:first-child {
+    flex: 0 0 64%;
+    
+}
+.kodiranjeSredom .slike article:last-child {
+    flex: 0 0 34%;
+}
+.kodiranjeSredom .slike .aside .poslednjeSaBloga {
+    background: var(--secondary);
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+.kodiranjeSredom .slike .aside .poslednjeSaBloga h2 {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.kodiranjeSredom .slike .aside .mapaSajta2 {
+    background: var(--secondary);
+    border-radius: 20px;
+    padding: 10px;
+}
+.kodiranjeSredom .slike .aside .mapaSajta2 h2 {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.kodiranjeSredom .slike .aside .mapaSajta2 ul li a {
+    color: var(--accents);
+}
+.kodiranjeSredom .slike .aside .mapaSajta2 ul li a:hover {
+    color: var(--white);
+}
+.linkovi {
+    list-style: none;
+    padding-left: 0;
+}
+/*------FOOTER----------------------------*/
+footer {
+    background: var(--gray);
+    color: var(--white);
+}
+footer .icons {
+    display: flex;
+}
+footer .icons i {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-right: 10px;
+}
+footer .articl1 {
+    display: flex;
+    justify-content: space-between;
+}
+footer .articl1 article {
+    padding: 50px 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+footer .articl1 .mapaSajta a{
+    color: var(--white);
+}
+footer .articl1 .mapaSajta a:hover{
+    color: var(--accents);
+}
+footer .copy {
+    text-align: center;
+    padding: 20px 0 50px 0 ;
+}
+
+
